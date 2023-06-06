@@ -49,8 +49,6 @@
       font-size: 16px;
       font-weight: bold;
       text-align: center;
-      word-wrap: break-word;
-      max-width: 90%;
       pointer-events: none;
       display: none;
     }
@@ -184,15 +182,15 @@
   <div id="header" style="margin-left: 30px; margin-top: 5px">Turn Around</div>
   <div id="content">
     <div id="image-container">
-      <img id="podcast-image" src="img/cover.jpg" alt="Podcast Image" style="width: 800px;">
+      <img id="podcast-image" src="img/cover.jpg" alt="Podcast Image" style="width: 1200px;">
       <div id="image-caption">In the dead of night, an ordinary home becomes the stage for an extraordinary nightmare. Prepare to be enveloped by darkness, as "Turn Around" takes you on an unforgettable journey through fear and suspense. Brace yourself for a thrilling radio drama that will leave you peering over your shoulder, questioning every shadow, and wondering if you are truly alone in the room</div>
     </div>
   </div>
   <div id="timestamps">
-    <button class="timestamp-button" onclick="jumpToTime(10)">Scene 1</button>
-    <button class="timestamp-button" onclick="jumpToTime(30)">Scene 2</button>
-    <button class="timestamp-button" onclick="jumpToTime(60)">Scene 3</button>
-    <button class="timestamp-button" onclick="jumpToTime(120)">Scene 4</button>
+    <button class="timestamp-button" onclick="jumpToTime(0)">Scene 1</button>
+    <button class="timestamp-button" onclick="jumpToTime(50)">Scene 2</button>
+    <button class="timestamp-button" onclick="jumpToTime(98)">Scene 3</button>
+    <button class="timestamp-button" onclick="jumpToTime(131)">Scene 4</button>
   </div>
 
   <h2 id="behind-the-scenes" style="padding: 10px; text-align: center; color: #CF0A0A; font-size: 24px; font-weight: bold; text-transform: uppercase;">Behind the Scenes</h2>
@@ -222,14 +220,19 @@
   </div>
 
   <audio id="sound" controls>
-    <source src="sound.mp3" type="audio/mp3">
+    <source src="sound.wav" type="audio/wav">
   </audio>
 
   <h2 id="credits">Credits</h2>
-  <p>Nasar AlHumaidi: Contributed in website creation and sound production </p>
-  <p>Nikita Gupta:</p>
-  <p>Ameera AlHarmoori: </p>
-  <p>Abi</p>
+  <p>Story: Ameera and Abi</p>
+  <p>Sound recording: Nikita, Nasar, and Abi</p>
+  <p>Narration: Abi</p>
+  <p>Sound editing: Ameera</p>
+  <p>Coding: Nasar and Nikita</p>
+  <p>Wireframe: Everyone (Abi)</p>
+  <p>Storyboard: Ameera</p>
+  <p>Flowchart: Ameera</p>
+  <p>Description: Abi</p>
 
   <script>
     var audio = document.getElementById("sound");
